@@ -1,9 +1,6 @@
 <?php
 
 namespace App\Models;
-nyoba nyoba aja yoo
-terus apakah ini benar?
-ga metu m e?
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
