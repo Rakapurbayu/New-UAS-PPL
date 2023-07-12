@@ -1,2 +1,2 @@
 Rakapurbayu Tito Aryasaputra (434221039)
- Lintang Sekar
+ Lintang Sekar Wangi (434221053)
