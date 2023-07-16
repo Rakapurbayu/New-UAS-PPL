@@ -9,9 +9,15 @@ use App\Http\Models\LessonModel;
 
 class LessonController extends Controller
 {
-    public function index(): Response
+    public function index()
     {
-    dd('index');
+        $data = pegawai::orderBy('nama', 'asc');
+        return DataTables::of($data)
+            ->addIndexColumn()
+            ->addColumn('aksi', function ($data) {
+                return view('pegawai.tombol')->with('data', $data);
+            })
+            ->make(true);
     }
     public function create(): Response
     {
