@@ -9,9 +9,9 @@ use App\Http\Models\UserModel;
 
 class UserController extends Controller
 {
-    public function index(): Response
+    public function index()
     {
-    dd('index');
+    return view ('admin.index');
     }
     public function create(): Response
     {
