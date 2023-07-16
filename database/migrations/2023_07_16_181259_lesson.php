@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lesson', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_matpel');
-            $table->string('desc_matpel');
-            $table->string('linkV');
-            $table->timestamps();
-        });
+        Schema::table('lesson', function (Blueprint $table) {
+        $table->dropColumn('quiz_modul');
+        $table->renameColumn('nama_modul', 'nama_matpel');
+        $table->renameColumn('desc_modul', 'desc_matpel');
+        $table->renameColumn('konten_modul', 'linkV');
+
+    });
     }
 
     /**
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lesson');
+        //
     }
 };
