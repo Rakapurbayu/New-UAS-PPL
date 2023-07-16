@@ -190,11 +190,11 @@
           <p class="section-subtitle">Categories</p>
 
           <h2 class="h2 section-title">
-            Online <span class="span">Classes</span> For Remote Learning.
+            Online <span class="span">Classes</span> For Remote Learning
           </h2>
 
           <p class="section-text">
-            Consectetur adipiscing elit sed do eiusmod tempor.
+            Unlock Knowledge Beyond Boundaries
           </p>
 
           <ul class="grid-list">
@@ -573,32 +573,21 @@
       <!-- 
         - #VIDEO
       -->
+<section class="video has-bg-image" aria-label="video" style="background-image: url('./assets/images/video-bg.png')">
+  <div class="container">
+    <div class="video-card">
+      <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
+        <img src="./assets/images/thumbnailep.png" width="970" height="550" loading="lazy" alt="video banner" class="img-cover">
+        <a href="https://youtu.be/y5YslrjQEpE" class="play-btn" aria-label="play video" target="_blank">
+          <ion-icon name="play" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+      <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt="" class="shape video-shape-1">
+      <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt="" class="shape video-shape-2">
+    </div>
+  </div>
+</section>
 
-      <section class="video has-bg-image" aria-label="video"
-        style="background-image: url('./assets/images/video-bg.png')">
-        <div class="container">
-
-          <div class="video-card">
-
-            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
-              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
-                class="img-cover">
-
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
-
-            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
-              class="shape video-shape-1">
-
-            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
-              class="shape video-shape-2">
-
-          </div>
-
-        </div>
-      </section>
 
 
 
