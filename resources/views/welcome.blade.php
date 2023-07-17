@@ -35,7 +35,7 @@
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/bgbaru.png">
   <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
