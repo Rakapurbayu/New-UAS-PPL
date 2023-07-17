@@ -48,7 +48,7 @@ Route::delete('Course/{id}', [CourseController::class, 'destroy'])->name('Course
 Route::resource('Lesson',LessonController::class);
 Route::get('Lesson', [LessonController::class, 'index'])->name('Lesson.index');
 Route::get('Lesson/create', [LessonController::class, 'create'])->name('Lesson.create');
-Route::post('Lesson', [LessonController::class, 'store'])->name('Lesson.store');
+Route::post('Lesson/create', [LessonController::class, 'store'])->name('Lesson.store');
 Route::get('Lesson/{id}/edit', [LessonController::class, 'edit'])->name('Lesson.edit');
 Route::put('Lesson/{id}', [LessonController::class, 'update'])->name('Lesson.update');
 Route::delete('Lesson/{id}', [LessonController::class, 'destroy'])->name('Lesson.destroy');

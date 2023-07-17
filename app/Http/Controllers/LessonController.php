@@ -6,7 +6,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
-use App\Http\Models\LessonModel;
+use App\Models\LessonModel;
 
 class LessonController extends Controller
 {
@@ -21,16 +21,18 @@ class LessonController extends Controller
     }
 
     public function store(Request $request)
-    {
-    $data=[
-        'id' => $request->id,
+{
+    $data = [
         'nama_matpel' => $request->nama_matpel,
         'desc_matpel' => $request->desc_matpel,
-        'link_video' => $request->linkV
+        'linkV' => $request->linkV
     ];
-    LessonModel::create($data);
-    return view ('Admin.index');
+    $lesson=LessonModel::create($data);
+    if ($lesson){
+        return redirect()->route('Lesson.index')->with('succes','Data masuk');
     }
+    return view('Admin.index');
+      }
     public function show(string $id): Response
     {
     dd('show');

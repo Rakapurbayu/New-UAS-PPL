@@ -10,20 +10,25 @@
                   </form>
                 </div>
                 
+                @if(session('succes'))
+                <div class="alert alert-succes">
+                    {{session('succes')}}
+                </div>
+                @endif
                 <!-- TOMBOL TAMBAH DATA -->
                 <div class="pb-3">
-                  <a href='' class="btn btn-primary">+ Tambah Data</a>
+                  <a href={{route('Lesson.create')}} class="btn btn-primary">+ Tambah Data</a>
                 </div>
           
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th class="col-md-1">No</th>
-                            <th class="col-md-2">ID Mata Pelajaran</th>
+                            <th class="col-md-1">ID Mata Pelajaran</th>
                             <th class="col-md-2">Mata Pelajaran</th>
                             <th class="col-md-3">Link Video</th>
-                            <th class="col-md-2">Deskripsi Matpel</th>
-                            <th class="col-md-2">Aksi</th>
+                            <th class="col-md-3">Deskripsi Matpel</th>
+                            <th class="col-md-3">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
