@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades;
 use App\Models\LessonModel;
 
 class LessonController extends Controller
 {
     public function index()
     {
-    return view ('Admin.index');
+    $data = LessonModel::orderBy('id')->get();
+    return view ('Admin.index')->with('data',$data);
     }
 
     public function create()
@@ -21,7 +22,18 @@ class LessonController extends Controller
     }
 
     public function store(Request $request)
-{
+    {
+    $request->validate([
+        'nama_matpel'=>'required',
+        'desc_matpel'=>'required',
+        'linkV'=>'required|unique:lesson,LinkV'
+    ],
+    [
+        'nama_matpel.required'=>'Nama Mata Pelajaran Wabjib Diisi',
+        'desc_matpel.required'=>'Deskripsi Mata Pelajaran Wabjib Diisi',
+        'linkV.unique'=>'Link Sudah Ada',
+        'linkV.required'=>'Link Mata Pelajaran Wabjib Diisi',
+    ]);
     $data = [
         'nama_matpel' => $request->nama_matpel,
         'desc_matpel' => $request->desc_matpel,
@@ -29,7 +41,7 @@ class LessonController extends Controller
     ];
     $lesson=LessonModel::create($data);
     if ($lesson){
-        return redirect()->route('Lesson.index')->with('succes','Data masuk');
+        return redirect()->route('Lesson.index')->with('success','Data Berhasil Disimpan');
     }
     return view('Admin.index');
       }

@@ -23,27 +23,27 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th class="col-md-1">No</th>
-                            <th class="col-md-1">ID Mata Pelajaran</th>
+                            <th class="col-md-2">ID Mata Pelajaran</th>
                             <th class="col-md-2">Mata Pelajaran</th>
-                            <th class="col-md-3">Link Video</th>
                             <th class="col-md-3">Deskripsi Matpel</th>
+                            <th class="col-md-3">Link Video</th>
                             <th class="col-md-3">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($data as $item)           
                         <tr>
-                            <td>1</td>
-                            <td>001</td>
-                            <td>Aljabar Linear</td>
-                            <td>https://www.youtube.com/watch?v=3CbGQEO_d0M&t=344s</td>
-                            <td>Materi SPL</td>
+                            <td>{{$item->id}}</td>
+                            <td>{{$item->nama_matpel}}</td>
+                            <td>{{$item->desc_matpel}}</td>
+                            <td>{{$item->linkV}}</td>
                             
                             <td>
                                 <a href='' class="btn btn-warning btn-sm">Edit</a>
                                 <a href='' class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
                
