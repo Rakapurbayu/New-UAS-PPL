@@ -5,27 +5,31 @@ namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
 use App\Http\Models\LessonModel;
 
 class LessonController extends Controller
 {
     public function index()
     {
-        $data = pegawai::orderBy('nama', 'asc');
-        return DataTables::of($data)
-            ->addIndexColumn()
-            ->addColumn('aksi', function ($data) {
-                return view('pegawai.tombol')->with('data', $data);
-            })
-            ->make(true);
+    return view ('Admin.index');
     }
-    public function create(): Response
+
+    public function create()
     {
-    dd('create');
+    return view ('Admin.create');
     }
-    public function store(Request $request): RedirectResponse
+
+    public function store(Request $request)
     {
-    dd('store');
+    $data=[
+        'id' => $request->id,
+        'nama_matpel' => $request->nama_matpel,
+        'desc_matpel' => $request->desc_matpel,
+        'link_video' => $request->linkV
+    ];
+    LessonModel::create($data);
+    return view ('Admin.index');
     }
     public function show(string $id): Response
     {
