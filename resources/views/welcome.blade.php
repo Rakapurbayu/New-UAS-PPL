@@ -108,18 +108,16 @@
 </button>
 
 
-        <button class="header-action-btn" aria-label="cart" title="Cart">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-
-          <span class="btn-badge">0</span>
-        </button>
-<a href="#" class="btn has-before" style="background-color: #C4A0ED; color: white;">
-  <span class="span">Try for free</span>
+<button class="header-action-btn" aria-label="cart" title="Cart">
+    <ion-icon name="cart-outline" aria-hidden="true" style="color: black;"></ion-icon>
+    <!-- Add inline styles for the cart badge -->
+    <span class="btn-badge" style="background-color: #C4A0ED; color: black;">0</span>
+  </button>
   
-  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-</a>
-
-
+ <a href="#" class="btn has-before" style="background-color: #C4A0ED; color: black;">
+    <span class="span">Try for free</span>
+    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  </a>
         <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
@@ -157,11 +155,10 @@
 			Tingkatkan pengetahuan, capai tujuan, dan jadilah yang terbaik. Bergabunglah sekarang!
             </p>
 
-            <a href="#" class="btn has-before">
-              <span class="span">Find courses</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
+  <a href="#" class="btn has-before" style="background-color: #C4A0ED;">
+  <span class="span" style="color: black;">Find courses</span>
+  <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
+</a>
 
           </div>
 
@@ -198,7 +195,7 @@
           <p class="section-subtitle">Categories</p>
 
           <h2 class="h2 section-title">
-            Online <span class="span">Classes</span> For Remote Learning
+          Online <span class="span" style="color: #C4A0ED;">Classes</span> For Remote Learning
           </h2>
 
           <p class="section-text">
@@ -208,85 +205,84 @@
           <ul class="grid-list">
 
             <li>
-              <div class="category-card" style="--color: 170, 75%, 41%">
+              <div class="category-card" style="background-color: rgb(247, 240, 255);">
+
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
-                    alt="Online Degree Programs" class="img">
+                  <img src="./assets/images/cat1.png" width="95" height="95" loading="lazy"
+                    alt="Technology and Web Development" class="img">
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Online Degree Programs</a>
+                  <a href="#" class="card-title">Technology and Web Development</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+                You'll gain skills in IT and web development to create innovative solutions.
                 </p>
 
-                <span class="card-badge">7 Courses</span>
+                <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">4 Courses</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="background-color: rgb(247, 240, 255);">
+                <div class="card-icon">
+                  <img src="./assets/images/cat2.png" width="115" height="115" loading="lazy"
+                    alt="Graphic Design and Multimedia" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Graphic Design and Multimedia</a>
+                </h3>
+
+                <p class="card-text">
+                  You'll gain skills in visual communication and creative design.
+                </p>
+
+             <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">6 Courses</span>
 
               </div>
             </li>
 
             <li>
-              <div class="category-card" style="--color: 351, 83%, 61%">
+              <div class="category-card" style="background-color: rgb(247, 240, 255);">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
-                    alt="Non-Degree Programs" class="img">
+                  <img src="./assets/images/cat3.png" width="115" height="115" loading="lazy"
+                    alt="Business and Entrepreneurship" class="img">
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Non-Degree Programs</a>
+                  <a href="#" class="card-title">Business and Entrepreneurship</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+You'll gain essential skills for success in business and entrepreneurship.
                 </p>
 
-                <span class="card-badge">4 Courses</span>
+             <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">6 Courses</span>
 
               </div>
             </li>
 
             <li>
-              <div class="category-card" style="--color: 229, 75%, 58%">
+              <div class="category-card" style="background-color: rgb(247, 240, 255);">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
-                    alt="Off-Campus Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Off-Campus Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <span class="card-badge">8 Courses</span>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card" style="--color: 42, 94%, 55%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
+                  <img src="./assets/images/cat4.png" width="115" height="115" loading="lazy"
                     alt="Hybrid Distance Programs" class="img">
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Hybrid Distance Programs</a>
+                  <a href="#" class="card-title">Foreign Languages and Communication</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
+               You'll gain valuable language proficiency and communication skills.
                 </p>
 
-                <span class="card-badge">8 Courses</span>
+             <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">4 Courses</span>
 
               </div>
             </li>
@@ -423,7 +419,7 @@
 
                   </div>
 
-                  <data class="price" value="29">$29.00</data>
+                  <data class="price" value="29">IDR 100.000</data>
 
                   <ul class="card-meta-list">
 
@@ -482,7 +478,7 @@
 
                   </div>
 
-                  <data class="price" value="49">$49.00</data>
+                  <data class="price" value="49">IDR 250.000</data>
 
                   <ul class="card-meta-list">
 
@@ -541,7 +537,7 @@
 
                   </div>
 
-                  <data class="price" value="35">$35.00</data>
+                  <data class="price" value="35">IDR 350.000</data>
 
                   <ul class="card-meta-list">
 
@@ -566,11 +562,10 @@
 
           </ul>
 
-          <a href="#" class="btn has-before">
-            <span class="span">Browse more courses</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
+<a href="#" class="btn has-before" style="background-color: #C4A0ED; color: black;">
+  <span class="span">Browse more courses</span>
+  <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
+</a>
 
         </div>
       </section>
@@ -683,7 +678,7 @@
       <a href="#" class="card-subtitle">Article</a>
 
       <h3 class="h3">
-        <a href="https://www.djkn.kemenkeu.go.id/kpknl-pamekasan/baca-artikel/14449/Desain-Grafis-untuk-Memaksimalkan-Konten-di-Media-Sosial.html" class="card-title">Desain Grafis untuk Memaksimalkan Konten di Media Sosial</a>
+        <a href="https://www.djkn.kemenkeu.go.id/kpknl-pamekasan/baca-artikel/14449/Desain-Grafis-untuk-Memaksimalkan-Konten-di-Media-Sosial.html" class="card-title">Desain Grafis untuk Konten Media Sosial</a>
       </h3>
 
       <ul class="card-meta-list">
@@ -833,21 +828,23 @@
           </p>
 
           <div class="wrapper">
-            <span class="span">Add:</span>
+            <span class="span" data-footer-link style="color: white;">Add:</span>
 
-            <address class="address">Jl. Airlangga No. 4-6, Surabaya, East Java 60115</address>
+            <address class="address" data-footer-link style="color: white;">Jl. Airlangga No. 4-6, Surabaya, East Java 60115</address>
           </div>
 
           <div class="wrapper">
-            <span class="span">Call:</span>
+            <span class="span" data-footer-link style="color: white;">Call:</span>
 
-            <a href="tel:+011234567890" class="footer-link">+62 812 345 678</a>
+            <a href="tel:+011234567890" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">+62 812 345 678</a>
           </div>
 
           <div class="wrapper">
-            <span class="span">Email:</span>
+            <span class="span" data-footer-link style="color: white;">Email:</span>
 
-            <a href="mailto:info@zensu.com" class="footer-link">info@zensu.com</a>
+            <a href="mailto:info@zensu.com" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">info@zensu.com</a>
           </div>
 
         </div>
@@ -855,31 +852,37 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Online Platform</p>
+            <p class="footer-list-title" >Online Platform</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">About</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Courses</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Courses</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Instructor</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Instructor</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Events</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Events</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Instructor Profile</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Instructor Profile</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Purchase Guide</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Purchase Guide</a>
           </li>
 
         </ul>
@@ -891,27 +894,33 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Contact Us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Gallery</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Gallery</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">News & Articles</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">News & Articles</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">FAQ's</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">FAQ's</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Sign In/Registration</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Sign In/Registration</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Coming Soon</a>
+            <a href="#" class="footer-link" data-footer-link style="color: white;" onmouseover="this.style.color='#C4A0ED'" 
+			onmouseout="this.style.color='white'">Coming Soon</a>
           </li>
 
         </ul>
@@ -920,18 +929,18 @@
 
           <p class="footer-list-title">Contacts</p>
 
-          <p class="footer-list-text">
+          <p class="footer-list-text" data-footer-link style="color: white;">
             Enter your email address to register to our newsletter subscription
           </p>
 
           <form action="" class="newsletter-form">
             <input type="email" name="email_address" placeholder="Your email" required class="input-field">
 
-            <button type="submit" class="btn has-before">
-              <span class="span">Subscribe</span>
+ <button type="submit" class="btn has-before" style="background-color: #C4A0ED;">
+  <span class="span" style="color: black;">Subscribe</span>
+  <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
+</button>
 
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
           </form>
 
           <ul class="social-list">
@@ -976,9 +985,11 @@
     <div class="footer-bottom">
       <div class="container">
 
-        <p class="copyright">
-          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">ZenSu Projek PPL</a>
-        </p>
+<p class="copyright">
+  Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link"
+    style="color: #C4A0ED;">ZenSu Projek PPL</a>
+</p>
+
 
       </div>
     </div>
@@ -993,9 +1004,10 @@
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
+<a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn style="background-color: #C4A0ED;">
+  <ion-icon name="chevron-up" aria-hidden="true" style="color: black;"></ion-icon>
+</a>
+
 
 
 
