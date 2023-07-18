@@ -9,7 +9,7 @@
   <!-- 
     - primary meta tag
   -->
-  <title>Z e n S u - Learning Redefined, the Zen Way</title>
+  <title>Learning Redefined, the Zen Way</title>
   <meta name="title" content="ZenSu - Learning Redefined, the Zen Way">
   <meta name="description" content="This is an educational website that empowers your learning journey">
 
@@ -36,10 +36,10 @@
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/bgbaru.png">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
-  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <link rel="preload" as="image" href="./assets/images/hero.png">
+  <link rel="preload" as="image" href="./assets/images/hero2.png">
+  <link rel="preload" as="image" href="./assets/images/heroshape1.png">
+  <link rel="preload" as="image" href="./assets/images/heroshape2.png">
 
 </head>
 
@@ -135,13 +135,13 @@
       -->
 
       <section class="section hero has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.svg')">
+        style="background-image: url('./assets/images/herobg.jpg')">
         <div class="container">
 
           <div class="hero-content">
 
             <h1 class="h1 section-title">
-              Explore the Limitless World of Learning through <span class="span"> EduPro</span> 
+              Explore the Limitless World of Learning through <span class="span"> ZenSu</span> 
             </h1>
 
             <p class="hero-text">
@@ -160,16 +160,16 @@
           <figure class="hero-banner">
 
             <div class="img-holder one" style="--width: 270; --height: 300;">
-              <img src="./assets/images/hero-banner-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+              <img src="./assets/images/hero.png" width="270" height="300" alt="hero banner" class="img-cover">
             </div>
 
             <div class="img-holder two" style="--width: 240; --height: 370;">
-              <img src="./assets/images/hero-banner-2.jpg" width="240" height="370" alt="hero banner" class="img-cover">
+              <img src="./assets/images/hero2.png" width="240" height="370" alt="hero banner" class="img-cover">
             </div>
 
-            <img src="./assets/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1">
+            <img src="./assets/images/heroshape1.png" width="380" height="190" alt="" class="shape hero-shape-1">
 
-            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+            <img src="./assets/images/heroshape2.png" width="622" height="551" alt="" class="shape hero-shape-2">
 
           </figure>
 
@@ -302,17 +302,17 @@
           <figure class="about-banner">
 
             <div class="img-holder" style="--width: 520; --height: 370;">
-              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
+              <img src="./assets/images/aboutbanner.jpg" width="520" height="370" loading="lazy" alt="about banner"
                 class="img-cover">
             </div>
 
-            <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
+            <img src="./assets/images/aboutshape1.png" width="360" height="420" loading="lazy" alt=""
               class="shape about-shape-1">
 
-            <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
+            <img src="./assets/images/aboutshape2.png" width="371" height="220" loading="lazy" alt=""
               class="shape about-shape-2">
 
-            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+            <img src="./assets/images/aboutshape3.png" width="722" height="528" loading="lazy" alt=""
               class="shape about-shape-3">
 
           </figure>
@@ -325,10 +325,11 @@
               Over 10 Years in <span class="span">Distant learning</span> for Skill Development
             </h2>
 
+
             <p class="section-text">
-              Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna
-              aliquaenim ad
-              minim.
+             ZenSu passionate about empowering individuals with the tools they need to succeed. 
+			 With over 10 years of experience in the online education industry, we have been committed to providing high-quality 
+			 courses and a dynamic learning environment that fosters growth and skill development.
             </p>
 
             <ul class="about-list">
@@ -353,7 +354,7 @@
 
             </ul>
 
-            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+            <img src="./assets/images/aboutshape4.png" width="100" height="100" loading="lazy" alt=""
               class="shape about-shape-4">
 
           </div>
@@ -369,7 +370,7 @@
         - #COURSE
       -->
 
-      <section class="section course" id="courses" aria-label="course">
+      <section class="section course" id="courses" aria-label="course" style="background-color: #F9ECFF;">
         <div class="container">
 
           <p class="section-subtitle">Popular Courses</p>
@@ -573,7 +574,7 @@
       <!-- 
         - #VIDEO
       -->
-<section class="video has-bg-image" aria-label="video" style="background-image: url('./assets/images/video-bg.png')">
+<section class="video has-bg-image" aria-label="video" style="background-image: url('./assets/images/videobg.png')">
   <div class="container">
     <div class="video-card">
       <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
@@ -582,8 +583,8 @@
           <ion-icon name="play" aria-hidden="true"></ion-icon>
         </a>
       </div>
-      <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt="" class="shape video-shape-1">
-      <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt="" class="shape video-shape-2">
+      <img src="./assets/images/videoshape1.png" width="1089" height="605" loading="lazy" alt="" class="shape video-shape-1">
+      <img src="./assets/images/videoshape2.png" width="158" height="174" loading="lazy" alt="" class="shape video-shape-2">
     </div>
   </div>
 </section>
@@ -648,153 +649,150 @@
       -->
 
       <section class="section blog has-bg-image" id="blog" aria-label="blog"
-        style="background-image: url('./assets/images/blog-bg.svg')">
+        style="background-image: url('./assets/images/blogbg.jpg')">
         <div class="container">
 
           <p class="section-subtitle">Latest Articles</p>
 
-          <h2 class="h2 section-title">Get News With Eduweb</h2>
+          <h2 class="h2 section-title">Get News With ZenSu</h2>
 
           <ul class="grid-list">
 
-            <li>
-              <div class="blog-card">
+<li>
+  <div class="blog-card">
 
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-1.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
+    <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+      <img src="./assets/images/blog1.jpg" width="370" height="370" loading="lazy"
+        alt="Become A Better Blogger: Content Planning" class="img-cover">
+    </figure>
 
-                <div class="card-content">
+    <div class="card-content">
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
+      <a href="https://www.djkn.kemenkeu.go.id/kpknl-pamekasan/baca-artikel/14449/Desain-Grafis-untuk-Memaksimalkan-Konten-di-Media-Sosial.html" class="card-btn" aria-label="read more">
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
 
-                  <a href="#" class="card-subtitle">Online</a>
+      <a href="#" class="card-subtitle">Article</a>
 
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
+      <h3 class="h3">
+        <a href="https://www.djkn.kemenkeu.go.id/kpknl-pamekasan/baca-artikel/14449/Desain-Grafis-untuk-Memaksimalkan-Konten-di-Media-Sosial.html" class="card-title">Desain Grafis untuk Memaksimalkan Konten di Media Sosial</a>
+      </h3>
 
-                  <ul class="card-meta-list">
+      <ul class="card-meta-list">
 
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+        <li class="card-meta-item">
+          <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Jul 30, 2023</span>
+        </li>
 
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
+        <li class="card-meta-item">
+          <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Com 300</span>
+        </li>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+      </ul>
 
-                      <span class="span">Com 09</span>
-                    </li>
+      <p class="card-text">
+        Pentingnya Desain Grafis dalam Meningkatkan Minat dan Pemahaman Konten di Media Sosial
+      </p>
 
-                  </ul>
+    </div>
 
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
+  </div>
+</li>
 
-                </div>
 
-              </div>
-            </li>
+<li>
+  <div class="blog-card">
 
-            <li>
-              <div class="blog-card">
+    <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+      <img src="./assets/images/blog2.jpg" width="370" height="370" loading="lazy"
+        alt="Become A Better Blogger: Content Planning" class="img-cover">
+    </figure>
 
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-2.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
+    <div class="card-content">
 
-                <div class="card-content">
+      <a href="https://sertifikasiku.com/tips-sukses-belajar-bahasa-asing-dengan-mudah/" class="card-btn" aria-label="read more">
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
+      <a href="#" class="card-subtitle">Tips & Tricks</a>
 
-                  <a href="#" class="card-subtitle">Online</a>
+      <h3 class="h3">
+        <a href="https://sertifikasiku.com/tips-sukses-belajar-bahasa-asing-dengan-mudah/" class="card-title">Tips Belajar Bahasa Asing, Efektif Juga Menyenangkan!</a>
+      </h3>
 
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
+      <ul class="card-meta-list">
 
-                  <ul class="card-meta-list">
+        <li class="card-meta-item">
+          <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Jul 22, 2023</span>
+        </li>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+        <li class="card-meta-item">
+          <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Com 100</span>
+        </li>
 
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
+      </ul>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+      <p class="card-text">
+        Tips belajar bahasa asing secara efektif dan menyenangkan untuk kuasai bahasa asing lebih baik.
+      </p>
 
-                      <span class="span">Com 09</span>
-                    </li>
+    </div>
 
-                  </ul>
+  </div>
+</li>
 
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
 
-                </div>
+           <li>
+  <div class="blog-card">
 
-              </div>
-            </li>
+    <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+      <img src="./assets/images/blog3.jpg" width="370" height="370" loading="lazy"
+        alt="Become A Better Blogger: Content Planning" class="img-cover">
+    </figure>
 
-            <li>
-              <div class="blog-card">
+    <div class="card-content">
 
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-3.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
+      <a href="https://www.dicoding.com/blog/kenal-pemrograman-web/" class="card-btn" aria-label="read more">
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
 
-                <div class="card-content">
+      <a href="#" class="card-subtitle">Article</a>
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
+      <h3 class="h3">
+        <a href="https://www.dicoding.com/blog/kenal-pemrograman-web/" class="card-title">Berkenalan Dengan Pemrograman Web</a>
+      </h3>
 
-                  <a href="#" class="card-subtitle">Online</a>
+      <ul class="card-meta-list">
 
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
+        <li class="card-meta-item">
+          <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Jul 11, 2023</span>
+        </li>
 
-                  <ul class="card-meta-list">
+        <li class="card-meta-item">
+          <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Com 6</span>
+        </li>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+      </ul>
 
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
+      <p class="card-text">
+         Peran penting bahasa pemrograman dalam menciptakan halaman web interaktif dan menarik.
+      </p>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+    </div>
 
-                      <span class="span">Com 09</span>
-                    </li>
+  </div>
+</li>
 
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
 
           </ul>
 
-          <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
+          <img src="./assets/images/blogshape.png" width="186" height="186" loading="lazy" alt=""
             class="shape blog-shape">
 
         </div>
@@ -819,29 +817,29 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo">
+            <img src="./assets/images/zenbanner.png" width="162" height="50" alt="Zen logo">
           </a>
 
           <p class="footer-brand-text">
-            Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.
+            Your Path to Zen Learning
           </p>
 
           <div class="wrapper">
             <span class="span">Add:</span>
 
-            <address class="address">70-80 Upper St Norwich NR2</address>
+            <address class="address">Jl. Airlangga No. 4-6, Surabaya, East Java 60115</address>
           </div>
 
           <div class="wrapper">
             <span class="span">Call:</span>
 
-            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+            <a href="tel:+011234567890" class="footer-link">+62 812 345 678</a>
           </div>
 
           <div class="wrapper">
             <span class="span">Email:</span>
 
-            <a href="mailto:info@eduweb.com" class="footer-link">info@eduweb.com</a>
+            <a href="mailto:info@zensu.com" class="footer-link">info@zensu.com</a>
           </div>
 
         </div>
@@ -971,7 +969,7 @@
       <div class="container">
 
         <p class="copyright">
-          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link">ZenSu Projek PPL</a>
         </p>
 
       </div>
