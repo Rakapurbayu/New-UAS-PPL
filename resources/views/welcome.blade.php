@@ -9,14 +9,14 @@
   <!-- 
     - primary meta tag
   -->
-  <title>EduPro - Explore Limitless Knowledge!</title>
-  <meta name="title" content="EduPro - Explore Limitless Knowledge!">
+  <title>Z e n S u - Learning Redefined, the Zen Way</title>
+  <meta name="title" content="ZenSu - Learning Redefined, the Zen Way">
   <meta name="description" content="This is an educational website that empowers your learning journey">
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" as="image" href="./assets/images/iniaja.png">
+  <link rel="shortcut icon" as="image" href="./assets/images/zenlogo.png">
 
   <!-- 
     - custom css link
@@ -53,14 +53,14 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/lebihbesar.png" width="162" height="50" alt="EduWeb logo">
+        <img src="./assets/images/zenbanner.png" width="162" height="50" alt="Zen logo">
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
           <a href="#" class="logo">
-            <img src="./assets/images/lebihbesar.png" width="162" height="50" alt="EduWeb logo">
+            <img src="./assets/images/zenbanner.png" width="162" height="50" alt="Zen logo">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
