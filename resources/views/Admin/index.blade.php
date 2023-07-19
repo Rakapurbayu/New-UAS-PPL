@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 @extends('layouts.template')
         <!-- START DATA -->
 @section('kontent')
@@ -39,15 +48,25 @@
                             <td>{{ $item->linkV }}</td>
                             <td>
                                 <a href="{{ route('Lesson.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                                <a href='' class="btn btn-danger btn-sm">Delete</a>
+                                <form action="{{ route('Lesson.destroy', $item->id) }}" method="POST" style="display: inline-block">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
                             </td>
-                        </tr>
+                        </tr>             
                         @endforeach
+                        </body>
+                        </html>       
                     </tbody>
                 </table>
-        <!-- Tampilkan pagination links -->
-        <div class="d-flex justify-content-end">
-            {{ $data->links() }}
+     <!-- Tampilkan pagination links -->
+        {{ $data->links() }}
+        <div class="d-flex justify-content-between">
+            <div>
+                Showing {{ $data->firstItem() }} to {{ $data->lastItem() }} of {{ $data->total() }} results
+            </div>
         </div>
     </div>
 @endsection
+
