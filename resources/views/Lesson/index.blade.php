@@ -55,9 +55,7 @@
                                 </form>
                             </td>
                         </tr>             
-                        @endforeach
-                        </body>
-                        </html>       
+                        @endforeach     
                     </tbody>
                 </table>
      <!-- Tampilkan pagination links -->
@@ -66,7 +64,11 @@
             <div>
                 Showing {{ $data->firstItem() }} to {{ $data->lastItem() }} of {{ $data->total() }} results
             </div>
+            <div class="d-flex justify-content-end mt-3">
+                <a href="{{ route('home') }}" class="btn btn-warning">Back to Dashboard</a>
+            </div>
         </div>
     </div>
 @endsection
-
+</body>
+</html>  

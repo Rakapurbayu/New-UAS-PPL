@@ -13,12 +13,12 @@ class LessonController extends Controller
     public function index()
     {
         $data = LessonModel::orderBy('id')->paginate(5);
-        return view('Admin.index', compact('data'));
+        return view('Lesson.index', compact('data'));
     }    
 
     public function create()
     {
-    return view ('Admin.create');
+    return view ('Lesson.create');
     }
 
     public function store(Request $request)
