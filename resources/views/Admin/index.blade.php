@@ -33,20 +33,21 @@
                     <tbody>
                         @foreach ($data as $item)           
                         <tr>
-                            <td>{{$item->id}}</td>
-                            <td>{{$item->nama_matpel}}</td>
-                            <td>{{$item->desc_matpel}}</td>
-                            <td>{{$item->linkV}}</td>
-                            
+                            <td>{{ $item->id }}</td>
+                            <td>{{ $item->nama_matpel }}</td>
+                            <td>{{ $item->desc_matpel }}</td>
+                            <td>{{ $item->linkV }}</td>
                             <td>
-                                <a href='' class="btn btn-warning btn-sm">Edit</a>
+                                <a href="{{ route('Lesson.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
                                 <a href='' class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
-               
-          </div>
-          <!-- AKHIR DATA -->
-          @endsection
+        <!-- Tampilkan pagination links -->
+        <div class="d-flex justify-content-end">
+            {{ $data->links() }}
+        </div>
+    </div>
+@endsection

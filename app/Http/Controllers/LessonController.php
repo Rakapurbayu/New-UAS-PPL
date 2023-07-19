@@ -12,9 +12,9 @@ class LessonController extends Controller
 {
     public function index()
     {
-    $data = LessonModel::orderBy('id')->get();
-    return view ('Admin.index')->with('data',$data);
-    }
+        $data = LessonModel::orderBy('id')->paginate(5);
+        return view('Admin.index', compact('data'));
+    }    
 
     public function create()
     {
@@ -49,9 +49,9 @@ class LessonController extends Controller
     {
     dd('show');
     }
-    public function edit(string $id): Response
+    public function edit($item)
     {
-    dd('edit');
+    return 'hi'.$item;
     }
     public function update(Request $request, string $id): RedirectResponse
     {
