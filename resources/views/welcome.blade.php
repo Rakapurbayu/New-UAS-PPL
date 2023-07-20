@@ -1,6 +1,3 @@
-
-
-ndjdskjdsakdadkjadadsajk
 <!DOCTYPE html>
 <html lang="en">
 
@@ -170,7 +167,7 @@ ndjdskjdsakdadkjadadsajk
               <img src="./assets/images/hero2.png" width="240" height="370" alt="hero banner" class="img-cover">
             </div>
 
-            <img src="./assets/images/heroshape1.png" width="380" height="190" alt="" class="shape hero-shape-1">
+            <img src="./assets/images/heroshape6.png" width="380" height="190" alt="" class="shape hero-shape-1">
 
             <img src="./assets/images/heroshape2.png" width="622" height="551" alt="" class="shape hero-shape-2">
 
