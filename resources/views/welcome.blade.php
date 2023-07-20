@@ -194,9 +194,12 @@
           </h2>
 
           <p class="section-text">
-            Unlock Knowledge Beyond Boundaries
+            Membuka Pengetahuan Tanpa Batas
           </p>
 
+          <h2 class="h2 section-title">
+            COMING SOON 
+</h2>
           <ul class="grid-list">
 
             <li>
@@ -209,11 +212,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Technology and Web Development</a>
+                  <a href="#" class="card-title">Teknologi dan Pengembangan Web</a>
                 </h3>
 
                 <p class="card-text">
-                You'll gain skills in IT and web development to create innovative solutions.
+                Dapatkan keterampilan di bidang IT dan pengembangan web untuk solusi inovatif!
                 </p>
 
                 <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">4 Courses</span>
@@ -228,11 +231,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Graphic Design and Multimedia</a>
+                  <a href="#" class="card-title">Desain Grafis dan Multimedia</a>
                 </h3>
 
                 <p class="card-text">
-                  You'll gain skills in visual communication and creative design.
+                Dapatkan keterampilan dalam komunikasi visual dan buat desain yang kreatif!
                 </p>
 
              <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">6 Courses</span>
@@ -249,11 +252,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Business and Entrepreneurship</a>
+                  <a href="#" class="card-title">Bisnis dan Kewirausahaan</a>
                 </h3>
 
                 <p class="card-text">
-You'll gain essential skills for success in business and entrepreneurship.
+Dapatkan keterampilan penting untuk kesuksesan di bisnis dan kewirausahaan!
                 </p>
 
              <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">6 Courses</span>
@@ -270,11 +273,11 @@ You'll gain essential skills for success in business and entrepreneurship.
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Foreign Languages and Communication</a>
+                  <a href="#" class="card-title">Bahasa Asing dan Komunikasi</a>
                 </h3>
 
                 <p class="card-text">
-               You'll gain valuable language proficiency and communication skills.
+                Dapatkan keterampilan komunikasi dan kemampuan bahasa yang penting!
                 </p>
 
              <span class="card-badge" style="background-color: #D2B9EF; color: inherit;">4 Courses</span>
@@ -326,9 +329,9 @@ You'll gain essential skills for success in business and entrepreneurship.
 
 
             <p class="section-text">
-             ZenSu passionate about empowering individuals with the tools they need to succeed. 
-			 With over 10 years of experience in the online education industry, we have been committed to providing high-quality 
-			 courses and a dynamic learning environment that fosters growth and skill development.
+            ZenSu adalah platform kursus online dengan pengalaman lebih dari 
+			 10 tahun dalam membantu pengguna mencapai kesuksesan melalui pembelajaran online. Bergabunglah dengan 
+			 komunitas kami dan mulailah perjalanan belajar Anda hari ini! 
             </p>
 
             <ul class="about-list">
@@ -389,7 +392,7 @@ You'll gain essential skills for success in business and entrepreneurship.
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">3 Weeks</span>
+                  <span class="span">3 Minggu</span>
                 </div>
 
                 <div class="card-content">
@@ -421,13 +424,13 @@ You'll gain essential skills for success in business and entrepreneurship.
                     <li class="card-meta-item">
                       <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">8 Lessons</span>
+                      <span class="span">8 Modul</span>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">20 Students</span>
+                      <span class="span">20 Murid</span>
                     </li>
 
                   </ul>
@@ -448,7 +451,7 @@ You'll gain essential skills for success in business and entrepreneurship.
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">8 Weeks</span>
+                  <span class="span">8 Minggu</span>
                 </div>
 
                 <div class="card-content">
@@ -480,13 +483,13 @@ You'll gain essential skills for success in business and entrepreneurship.
                     <li class="card-meta-item">
                       <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">15 Lessons</span>
+                      <span class="span">15 Modul</span>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">35 Students</span>
+                      <span class="span">35 Murid</span>
                     </li>
 
                   </ul>
@@ -507,7 +510,7 @@ You'll gain essential skills for success in business and entrepreneurship.
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <span class="span">3 Weeks</span>
+                  <span class="span">3 Minggu</span>
                 </div>
 
                 <div class="card-content">
@@ -539,13 +542,13 @@ You'll gain essential skills for success in business and entrepreneurship.
                     <li class="card-meta-item">
                       <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">13 Lessons</span>
+                      <span class="span">13 Modul</span>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="span">18 Students</span>
+                      <span class="span">18 Murid</span>
                     </li>
 
                   </ul>
@@ -558,7 +561,7 @@ You'll gain essential skills for success in business and entrepreneurship.
           </ul>
 
 <a href="#" class="btn has-before" style="background-color: #C4A0ED; color: black;">
-  <span class="span">Browse more courses</span>
+  <span class="span">Temukan Kursus Lainnya</span>
   <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
 </a>
 
