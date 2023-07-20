@@ -43,6 +43,7 @@ Route::post('Course', [CourseController::class, 'store'])->name('Course.store');
 Route::get('Course/{id}/edit', [CourseController::class, 'edit'])->name('Course.edit');
 Route::put('Course/{id}', [CourseController::class, 'update'])->name('Course.update');
 Route::delete('Course/{id}', [CourseController::class, 'destroy'])->name('Course.destroy');
+Route::get('/course/search', 'CourseController@search')->name('course.search');
 
 //[http://127.0.0.1:8000/Lesson]//
 Route::resource('Lesson',LessonController::class);
@@ -52,6 +53,7 @@ Route::post('Lesson/create', [LessonController::class, 'store'])->name('Lesson.s
 Route::get('Lesson/{id}/edit', [LessonController::class, 'edit'])->name('Lesson.edit');
 Route::put('Lesson/{id}', [LessonController::class, 'update'])->name('Lesson.update');
 Route::delete('Lesson/{id}', [LessonController::class, 'destroy'])->name('Lesson.destroy');
+Route::get('/lesson/search', [LessonController::class, 'search'])->name('Lesson.search');
 
 //[http://127.0.0.1:8000/Assignment]//
 Route::resource('Assignment',AssignmentController::class);

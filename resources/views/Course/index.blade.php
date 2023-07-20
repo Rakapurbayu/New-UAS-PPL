@@ -1,20 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Mahasiswa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
-  <body class="bg-dark">
-    <main class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZenSu</title>
+</head>
+<body>
 @extends('layouts.template')
 <!-- START DATA -->
 @section('kontent')
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <!-- FORM PENCARIAN -->
     <div class="pb-3">
-        <form class="d-flex" action="{{ route('Lesson.search') }}" method="get">
+        <form class="d-flex" action="{{ route('Course.index') }}" method="get">
             <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
             <button class="btn btn-secondary" type="submit">Cari</button>
         </form>
@@ -28,16 +27,16 @@
 
     <!-- TOMBOL TAMBAH DATA -->
     <div class="pb-3">
-        <a href="{{ route('Lesson.create') }}" class="btn btn-primary">+ Tambah Data</a>
+        <a href="{{ route('Course.create') }}" class="btn btn-primary">+ Tambah Data</a>
     </div>
 
     <table class="table table-striped">
         <thead>
             <tr>
-                <th class="col-md-2">ID Mata Pelajaran</th>
-                <th class="col-md-2">Mata Pelajaran</th>
-                <th class="col-md-3">Deskripsi Matpel</th>
-                <th class="col-md-3">Link Video</th>
+                <th class="col-md-2">ID Course</th>
+                <th class="col-md-2">Nama Course</th>
+                <th class="col-md-3">Deskripsi Course</th>
+                <th class="col-md-3">Link Course</th>
                 <th class="col-md-3">Aksi</th>
             </tr>
         </thead>
@@ -45,12 +44,12 @@
             @foreach ($data as $item)
             <tr>
                 <td>{{ $item->id }}</td>
-                <td>{{ $item->nama_matpel }}</td>
-                <td>{{ $item->desc_matpel }}</td>
-                <td>{{ $item->linkV }}</td>
+                <td>{{ $item->nama_course }}</td>
+                <td>{{ $item->desc_course }}</td>
+                <td>{{ $item->linkC }}</td>
                 <td>
-                    <a href="{{ route('Lesson.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                    <form action="{{ route('Lesson.destroy', $item->id) }}" method="POST" style="display: inline-block">
+                    <a href="{{ route('Course.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                    <form action="{{ route('Course.destroy', $item->id) }}" method="POST" style="display: inline-block">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
@@ -69,7 +68,7 @@
         </div>
         @if (Request::has('katakunci'))
         <div class="pb-3">
-            <a href="{{ route('Lesson.index') }}" class="btn btn-primary">Back to Main</a>
+            <a href="{{ route('Course.index') }}" class="btn btn-primary">Back to Main</a>
         </div>
         @endif
     </div>

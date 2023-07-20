@@ -2,40 +2,75 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use App\Http\Models\CourseModel;
+use App\Models\CourseModel;
 
 class CourseController extends Controller
 {
-    public function index(): Response
+    public function index()
     {
-    dd('index');
+        $data = CourseModel::paginate(5);
+        return view('Course.index', compact('data'));
     }
+
     public function create(): Response
     {
-    dd('create');
+        return view('Course.create');
     }
+
     public function store(Request $request): RedirectResponse
     {
-    dd('store');
+        $data = [
+            'nama_khursus' => $request->nama_khursus,
+            'desc_khursus' => $request->desc_khursus,
+            'sumber_khursus' => $request->sumber_khursus
+        ];
+        CourseModel::create($data);
+        return redirect()->route('Course.index')->with('success', 'Data berhasil ditambahkan.');
     }
+
     public function show(string $id): Response
     {
-    dd('show');
+        // Mengambil data course berdasarkan $id (misal menggunakan CourseModel)
+        $course = CourseModel::find($id);
+        return view('Course.show', compact('course'));
     }
+
     public function edit(string $id): Response
     {
-    dd('edit');
+        // Mengambil data course berdasarkan $id (misal menggunakan CourseModel)
+        $course = CourseModel::find($id);
+        // Inisialisasi variabel $mode dengan nilai 'edit'
+        $mode = 'edit';
+        return view('Course.edit', compact('course', 'mode'));
     }
+
     public function update(Request $request, string $id): RedirectResponse
     {
-    dd('update');
+        $data = [
+            'nama_khursus' => $request->nama_khursus,
+            'desc_khursus' => $request->desc_khursus,
+            'sumber_khursus' => $request->sumber_khursus
+        ];
+        CourseModel::where('id', $id)->update($data);
+        return redirect()->route('Course.index')->with('success', 'Data berhasil diperbarui.');
     }
+
     public function destroy(string $id): RedirectResponse
     {
-    dd('store');
+        CourseModel::destroy($id);
+        return redirect()->route('Course.index')->with('success', 'Data berhasil dihapus.');
     }
-    }
-    
+    public function search(Request $request)
+{
+    $katakunci = $request->get('katakunci');
+
+    $data = CourseModel::where('nama_matpel', 'like', '%' . $katakunci . '%')
+                       ->orWhere('desc_matpel', 'like', '%' . $katakunci . '%')
+                       ->orWhere('linkV', 'like', '%' . $katakunci . '%')
+                       ->paginate(5);
+
+    return view('Course.index', compact('data'));
+}
+
+}

@@ -1,6 +1,3 @@
-dhsudhsdsjhjhjddajkfsdk
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,25 +90,7 @@ dhsudhsdsjhjhjddajkfsdk
 
       <div class="header-actions">
 	
-
-        <style>
-  /* Add this style block inside the head tag or in a style section */
-  .header-action-btn:hover ion-icon[name="search-outline"] {
-    filter: invert(73%) sepia(32%) saturate(2499%) hue-rotate(271deg) brightness(104%) contrast(102%);
-  }
-</style>
-
-<button class="header-action-btn" aria-label="toggle search" title="Search">
-  <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-</button>
-
-
-<button class="header-action-btn" aria-label="cart" title="Cart">
-    <ion-icon name="cart-outline" aria-hidden="true" style="color: black;"></ion-icon>
-    <!-- Add inline styles for the cart badge -->
-    <span class="btn-badge" style="background-color: #C4A0ED; color: black;">0</span>
-  </button>
-  
+        
  <a href="/login" class="btn has-before" style="background-color: #C4A0ED; color: black;">
     <span class="span">Login</span>
     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -153,8 +132,8 @@ dhsudhsdsjhjhjddajkfsdk
 			Tingkatkan pengetahuan, capai tujuan, dan jadilah yang terbaik. Bergabunglah sekarang!
             </p>
 
-  <a href="#" class="btn has-before" style="background-color: #C4A0ED;">
-  <span class="span" style="color: black;">Find courses</span>
+  <a href="Course.index" class="btn has-before" style="background-color: #C4A0ED;">
+  <span class="span" style="color: black;">Temukan Kursus</span>
   <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
 </a>
 
@@ -563,8 +542,8 @@ Dapatkan keterampilan penting untuk kesuksesan di bisnis dan kewirausahaan!
 
           </ul>
 
-<a href="#" class="btn has-before" style="background-color: #C4A0ED; color: black;">
-  <span class="span">Temukan Kursus Lainnya</span>
+<a href="{{ route('login') }}" class="btn has-before" style="background-color: #C4A0ED; color: black;">
+  <span class="span">Temukan Pembelajaran Lainnya</span>
   <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: black;"></ion-icon>
 </a>
 
