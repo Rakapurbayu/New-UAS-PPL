@@ -986,7 +986,7 @@ You'll gain essential skills for success in business and entrepreneurship.
       <div class="container">
 
 <p class="copyright">
-  Copyright 2022 All Rights Reserved by <a href="#" class="copyright-link"
+  Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link"
     style="color: #C4A0ED;">ZenSu Projek PPL</a>
 </p>
 
