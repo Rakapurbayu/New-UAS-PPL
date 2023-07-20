@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 @extends('layouts.template')
         <!-- START DATA -->
 @section('kontent')
@@ -33,20 +42,33 @@
                     <tbody>
                         @foreach ($data as $item)           
                         <tr>
-                            <td>{{$item->id}}</td>
-                            <td>{{$item->nama_matpel}}</td>
-                            <td>{{$item->desc_matpel}}</td>
-                            <td>{{$item->linkV}}</td>
-                            
+                            <td>{{ $item->id }}</td>
+                            <td>{{ $item->nama_matpel }}</td>
+                            <td>{{ $item->desc_matpel }}</td>
+                            <td>{{ $item->linkV }}</td>
                             <td>
-                                <a href='' class="btn btn-warning btn-sm">Edit</a>
-                                <a href='' class="btn btn-danger btn-sm">Delete</a>
+                                <a href="{{ route('Lesson.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                <form action="{{ route('Lesson.destroy', $item->id) }}" method="POST" style="display: inline-block">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
                             </td>
-                        </tr>
-                        @endforeach
+                        </tr>             
+                        @endforeach     
                     </tbody>
                 </table>
-               
-          </div>
-          <!-- AKHIR DATA -->
-          @endsection
+     <!-- Tampilkan pagination links -->
+        {{ $data->links() }}
+        <div class="d-flex justify-content-between">
+            <div>
+                Showing {{ $data->firstItem() }} to {{ $data->lastItem() }} of {{ $data->total() }} results
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <a href="{{ route('home') }}" class="btn btn-warning">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+@endsection
+</body>
+</html>  

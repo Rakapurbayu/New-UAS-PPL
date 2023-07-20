@@ -85,11 +85,6 @@
     <a href="#blog" class="navbar-link" data-nav-link style="color: black;" onmouseover="this.style.color='#C4A0ED'" onmouseout="this.style.color='black'">Blog</a>
   </li>
 
-  <li class="navbar-item">
-    <a href="#" class="navbar-link" data-nav-link style="color: black;" onmouseover="this.style.color='#C4A0ED'" onmouseout="this.style.color='black'">Contact</a>
-  </li>
-</ul>
-
 
       </nav>
 
@@ -114,8 +109,8 @@
     <span class="btn-badge" style="background-color: #C4A0ED; color: black;">0</span>
   </button>
   
- <a href="#" class="btn has-before" style="background-color: #C4A0ED; color: black;">
-    <span class="span">Try for free</span>
+ <a href="/login" class="btn has-before" style="background-color: #C4A0ED; color: black;">
+    <span class="span">Login</span>
     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
   </a>
         <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
